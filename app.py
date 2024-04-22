@@ -9,7 +9,7 @@ import chainlit as cl
 
 @cl.on_chat_start
 async def on_chat_start():
-    model = Ollama(model="pythonCoder")
+    model = Ollama(model="mistral")
     prompt = ChatPromptTemplate.from_messages(
         [
             (
